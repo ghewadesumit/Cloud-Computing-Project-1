@@ -2,6 +2,7 @@
 Docker Cloud uses Docker Hub as its native registry for storing both public and private repositories. 
 Once the images is pushed to Docker Hub, they are available in Docker Cloud.
 The Objective of the Docker application is to run  java web application via docker image. Docker is a tool designed to make easier to create, deploy, and run applications by using containers.
+
 Containers allow a developer to package up an application with all of the parts it needs, such as libraries and other dependencies, and ship it all out as one package.
 Docker provides a stand-alone Linux environment where you can install your libraries and run your application within an isolated environment. As we have installed application in AWS already, we should be able to install it into Docker.
 
@@ -21,7 +22,7 @@ Here the web application takes an input date and then gives weather forecast TMI
 4. Write the following commands in that Pull base image From tomcat8:-jre8 Maintainer MAINTAINER "Sumit Ghewade <ghewadsa@mail.uc.edu"> Copy to images tomcat path ADD Rest_proj.war /usr/local/tomcat/webapps/
 5. Build docker image using docker build -t webserver .
 6. run docker containeer using docker build -it --rm -p 8080:8080 --name Rest_proj webserver
-7. use this link http://ec2-52-14-220-93.us-east-2.compute.amazonaws.com:8080/Rest_proj/ to access docker image.
+7. use this link http://ec2-54-186-40-227.us-west-2.compute.amazonaws.com:8080/Rest_proj/ to access docker image.
 8. we use "docker images" command to check all the docker image files.
 9. we use "docker ps" to check all the running containers. 10.use "docker commit 575c0c34a6c6 ghewadesumit/575c0c34a6c6" command to commit our image file to our docker hub account.
 10. docker login --username --password to log in into docker.hub account.
@@ -34,8 +35,8 @@ Prior Knowledge of AWS and Docker.
 
 ## Reference
 
+https://www.youtube.com/watch?v=_d-c9uGcUrU
 
-
-
-
-## Pre
+https://github.uc.edu/tatavag/CloudComputing2019/wiki/Docker---Hands-on
+ 
+http://codeomitted.com/deploy-war-file-to-docker-image/
