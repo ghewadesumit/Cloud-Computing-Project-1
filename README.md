@@ -40,3 +40,7 @@ https://www.youtube.com/watch?v=_d-c9uGcUrU
 https://github.uc.edu/tatavag/CloudComputing2019/wiki/Docker---Hands-on
  
 http://codeomitted.com/deploy-war-file-to-docker-image/
+
+## Author
+
+* **Sumit Ghewade** - *Initial work* - [ghewadesumit](https://github.com/ghewadesumit)
