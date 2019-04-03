@@ -22,15 +22,19 @@ Here the web application takes an input date and then gives weather forecast TMI
 4. Write the following commands in that Pull base image From tomcat8:-jre8 Maintainer MAINTAINER "Sumit Ghewade <ghewadsa@mail.uc.edu"> Copy to images tomcat path ADD Rest_proj.war /usr/local/tomcat/webapps/
 5. Build docker image using docker build -t webserver .
 6. run docker containeer using docker build -it --rm -p 8080:8080 --name Rest_proj webserver
-7. use this link http://ec2-54-186-40-227.us-west-2.compute.amazonaws.com:8080/Rest_proj/ to access project.
+7. use this link http://localhost:8080/Rest_proj/ to access project.
 8. we use "docker images" command to check all the docker image files.
 9. we use "docker ps" to check all the running containers. 10.use "docker commit 8f6d386f397d ghewadesumit/8f6d386f397d" command to commit our image file to our docker hub account.
 10. docker login --username --password to log in into docker.hub account.
-11. we the use "docker push ghewadesumit/8f6d386f397d" command to push our docker file to docker hub.
-12. to pull the docker image file on any device, use command "docker pull ghewadesumit/8f6d386f397d:latest".
+11. We then use "docker push ghewadesumit/8f6d386f397d" command to push our docker file to docker hub.
+12. To pull the docker image file on any device, use command "docker pull ghewadesumit/8f6d386f397d:latest".
 
 Run the docker image
 You can run the image by using command "docker run -p 8080:8080 ghewadesumit/8f6d386f397d"
+
+Use the following link to run on the local machine
+http://localhost:8080/Rest_proj/
+
 
 ## Pre-requisites
 Internet connection 
